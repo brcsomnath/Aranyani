@@ -1,0 +1,40 @@
+program: cli.py
+method: grid
+name: sweep
+parameters:
+  lambda_const: 
+    values: [0.0, 0.1, 0.3, 0.5, 1.0, 5., 10., 100]
+  dataset:
+    values: ['adult']
+  mode:
+    values: ['node']
+  max_iter:
+    values: [1]
+  depth:
+    values: [4]
+  num_trees:
+    values: [3]
+  compute_fairness: 
+    values: [True]
+  batch_size: 
+    values: [1]
+  activation:
+    values: ['sigmoid']
+  model_type:
+    values: ['forest']
+  compute_mode:
+    values: ['default']
+  base_gamma: 
+    values: [None]
+  constraint_type:
+    values: ['node']
+  gradient_type:
+    values: ['vanilla']
+  probability:
+    values: [0.5]
+  encoder_model:
+    values: ['instructor']
+  reservoir_size:
+    values: [500]
+  offline_loss_type:
+    values: ['mmd']
